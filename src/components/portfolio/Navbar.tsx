@@ -63,10 +63,10 @@ const Navbar = () => {
 
             {/* CTA Button */}
             <div className="hidden md:block">
-              <a href="/HARIKRISHNAN G (Resume).pdf" download>
+              <a href="/HARIKRISHNANG(Resume).pdf" download>
                 <Button size="sm" className="gap-2">
                   <Download className="w-4 h-4" />
-                  Download CV
+                  Download Resume
                 </Button>
               </a>
             </div>
