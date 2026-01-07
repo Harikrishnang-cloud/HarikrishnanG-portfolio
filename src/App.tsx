@@ -5,6 +5,10 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
+import emailjs from "@emailjs/browser";
+
+emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
+
 
 const queryClient = new QueryClient();
 

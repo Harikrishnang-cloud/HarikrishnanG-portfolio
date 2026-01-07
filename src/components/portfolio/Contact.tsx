@@ -45,6 +45,12 @@ const Contact = () => {
         setLoading(false);
       });
   };
+  console.log("ENV CHECK:", {
+  service: import.meta.env.VITE_EMAILJS_SERVICE_ID,
+  template: import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+  publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+});
+
 
   return (
     <section className="py-20 bg-background" id="contact">
