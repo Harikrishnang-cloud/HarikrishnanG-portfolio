@@ -134,7 +134,7 @@ const Hero = () => {
               className="flex justify-center lg:justify-start gap-4"
             >
               <a
-                href="https://github.com/harikrishnan"
+                href="https://github.com/Harikrishnang-cloud"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 rounded-full bg-foreground text-background hover:bg-foreground/90 transition-colors"
@@ -142,7 +142,7 @@ const Hero = () => {
                 <Github className="w-5 h-5" />
               </a>
               <a
-                href="https://linkedin.com/in/harikrishnan"
+                href="https://www.linkedin.com/in/harikrishnan-g-1315721b7/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 rounded-full bg-foreground text-background hover:bg-foreground/90 transition-colors"
@@ -150,7 +150,7 @@ const Hero = () => {
                 <Linkedin className="w-5 h-5" />
               </a>
               <a
-                href="https://leetcode.com/harikrishnan"
+                href="https://leetcode.com/u/HK_INTERNATIONAL/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 rounded-full bg-foreground text-background hover:bg-foreground/90 transition-colors"
