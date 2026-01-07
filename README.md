@@ -2,8 +2,8 @@
 
 This is my personal portfolio website showcasing my skills, projects, and experience as a Full Stack Developer.
 
-🌐 **Live Website**: https://<your-vercel-project>.vercel.app  
-📁 **GitHub Repository**: https://github.com/<your-username>/<repo-name>
+🌐 **Live Website**: [https://<your-vercel-project>.vercel.app  ](https://harikrishnang.vercel.app/)
+📁 **GitHub Repository**: [https://github.com/<your-username>/<repo-name>](https://github.com/Harikrishnang-cloud/HarikrishnanG-portfolio)
 
 ---
 
