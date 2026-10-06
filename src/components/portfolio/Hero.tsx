@@ -75,7 +75,7 @@ const Hero = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
             >
               <span className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
-                Full Stack Developer
+                Software Engineer
               </span>
             </motion.div>
 
@@ -95,10 +95,9 @@ const Hero = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
-              className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-8"
+              className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-8 leading-relaxed"
             >
-              Passionate Web Developer with hands-on experience in building scalable full-stack MERN applications. 
-              Delivered complete e-commerce platforms and contributed 5,000+ lines of clean, maintainable code.
+              Software Engineer specializing in building scalable full-stack web platforms, enterprise SaaS solutions, drone technology platforms, and intelligent AI automation workflows for corporate and international clients.
             </motion.p>
 
             <motion.div

@@ -1,15 +1,6 @@
 import { motion } from "framer-motion";
 import {
-  Mail,
-  Phone,
-  MapPin,
-  Send,
-  Github,
-  Linkedin,
-  Code,
-  Twitter,
-  Instagram
-} from "lucide-react";
+  Mail,Phone,MapPin,Send,Github,Linkedin,Code,Twitter,Instagram} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -129,22 +120,23 @@ const Contact = () => {
             </div>
 
             {/* Social Links */}
-            <div className="flex gap-4">
+            <div className="flex gap-3">
               {[ 
-                { icon: Github, link: "https://github.com/Harikrishnang-cloud" },
-                { icon: Linkedin, link: "https://www.linkedin.com/in/harikrishnan-g-1315721b7/" },
-                { icon: Code, link: "https://leetcode.com/u/HK_INTERNATIONAL/" },
-                { icon: Twitter, link: "https://x.com/HKINTERNATION22" },
-                { icon: Instagram, link: "https://www.instagram.com/_harikrishnan_01/" },
-              ].map(({ icon: Icon, link }, i) => (
+                { icon: Github, link: "https://github.com/Harikrishnang-cloud", hoverClass: "hover:text-foreground hover:border-foreground/40 hover:bg-muted/80", label: "GitHub" },
+                { icon: Linkedin, link: "https://www.linkedin.com/in/harikrishnan-g-1315721b7/", hoverClass: "hover:text-[#0A66C2] hover:border-[#0A66C2]/40 hover:bg-[#0A66C2]/10", label: "LinkedIn" },
+                { icon: Code, link: "https://leetcode.com/u/HK_INTERNATIONAL/", hoverClass: "hover:text-[#FFA116] hover:border-[#FFA116]/40 hover:bg-[#FFA116]/10", label: "LeetCode" },
+                { icon: Twitter, link: "https://x.com/HKINTERNATION22", hoverClass: "hover:text-[#1DA1F2] hover:border-[#1DA1F2]/40 hover:bg-[#1DA1F2]/10", label: "Twitter" },
+                { icon: Instagram, link: "https://www.instagram.com/_harikrishnan_01/", hoverClass: "hover:text-[#E4405F] hover:border-[#E4405F]/40 hover:bg-[#E4405F]/10", label: "Instagram" },
+              ].map(({ icon: Icon, link, hoverClass, label }, i) => (
                 <motion.a
                   key={i}
                   href={link}
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label={label}
                   whileHover={{ scale: 1.1, y: -2 }}
                   whileTap={{ scale: 0.95 }}
-                  className="p-3 rounded-xl bg-card border hover:bg-primary/5"
+                  className={`p-3 rounded-xl bg-card border border-border text-muted-foreground transition-all duration-300 shadow-sm ${hoverClass}`}
                 >
                   <Icon className="w-5 h-5" />
                 </motion.a>

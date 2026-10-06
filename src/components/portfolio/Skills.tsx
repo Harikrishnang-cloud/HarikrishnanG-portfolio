@@ -8,22 +8,22 @@ const skillCategories = [
   },
   {
     title: "Frontend",
-    skills: ["React.js", "Redux", "Tailwind CSS", "HTML/CSS"],
+    skills: ["React.js","Next.js","Redux Toolkit","Zustand", "Tailwind CSS", "HTML/CSS"],
     color: "from-purple-500 to-pink-500",
   },
   {
     title: "Backend",
-    skills: ["Node.js", "Express.js", "REST APIs", "JWT Auth"],
+    skills: ["Node.js", "Express.js","NestJS", "TypeScript","REST APIs","JWT Auth"],
     color: "from-green-500 to-emerald-500",
   },
   {
     title: "Database",
-    skills: ["MongoDB", "SQL", "Firebase"],
+    skills: ["MongoDB","PostgreSQL","SQL", "Firebase", "Redis"],
     color: "from-orange-500 to-amber-500",
   },
   {
     title: "Cloud & DevOps",
-    skills: ["Docker", "AWS", "Vercel", "Cloudinary"],
+    skills: ["Docker","AWS","Nginx", "Linux", "PM2", "CI/CD", "Vercel", "Cloudinary"],
     color: "from-red-500 to-rose-500",
   },
   {
@@ -31,6 +31,21 @@ const skillCategories = [
     skills: ["Git", "GitHub", "Postman", "Figma"],
     color: "from-indigo-500 to-violet-500",
   },
+  {
+    title:"AI & Automation",
+    skills:["n8n","AI Agents", "RAG", "Gemini API"],
+    color: "from-yellow-500 to-amber-500",
+  },
+  {
+    title:"Testing",
+    skills:["Playwright"],
+    color: "from-blue-500 to-cyan-500",
+  },
+  {
+    title:"API Integration",
+    skills:["Payment Gateways","Email APIs","Notification APIs"],
+    color: "from-purple-500 to-pink-500",
+  }
 ];
 
 const containerVariants = {

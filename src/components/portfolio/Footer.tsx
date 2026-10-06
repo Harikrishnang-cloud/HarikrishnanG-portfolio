@@ -26,7 +26,7 @@ const Footer = () => {
               HARIKRISHNAN G<span className="text-primary"></span>
             </a>
             <p className="text-sm text-muted-foreground mt-2">
-              Full Stack Developer | Ex-Stenographer | Ex-Mathematics Teacher
+              Software Engineer | Ex-Stenographer | Ex-Mathematics Teacher
             </p>
           </motion.div>
 
@@ -36,49 +36,59 @@ const Footer = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="flex gap-4"
+            className="flex items-center gap-3"
           >
+            {/* GitHub */}
             <a
               href="https://github.com/Harikrishnang-cloud"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 rounded-lg text-muted-foreground hover:text-foreground hover:bg-card hover:scale-110 transition-all"
+              aria-label="GitHub Profile"
+              className="p-2.5 rounded-xl border border-border bg-card text-muted-foreground transition-all duration-300 hover:text-foreground hover:border-foreground/40 hover:bg-muted/80 hover:scale-110 hover:shadow-sm"
             >
               <Github className="w-5 h-5" />
             </a>
 
+            {/* LinkedIn */}
             <a
               href="https://www.linkedin.com/in/harikrishnan-g-1315721b7/"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 rounded-lg text-muted-foreground hover:text-foreground hover:bg-card hover:scale-110 transition-all"
+              aria-label="LinkedIn Profile"
+              className="p-2.5 rounded-xl border border-border bg-card text-muted-foreground transition-all duration-300 hover:text-[#0A66C2] hover:border-[#0A66C2]/40 hover:bg-[#0A66C2]/10 hover:scale-110 hover:shadow-sm"
             >
               <Linkedin className="w-5 h-5" />
             </a>
 
+            {/* LeetCode */}
             <a
               href="https://leetcode.com/u/HK_INTERNATIONAL/"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 rounded-lg text-muted-foreground hover:text-foreground hover:bg-card hover:scale-110 transition-all"
+              aria-label="LeetCode Profile"
+              className="p-2.5 rounded-xl border border-border bg-card text-muted-foreground transition-all duration-300 hover:text-[#FFA116] hover:border-[#FFA116]/40 hover:bg-[#FFA116]/10 hover:scale-110 hover:shadow-sm"
             >
               <Code2 className="w-5 h-5" />
             </a>
 
+            {/* X / Twitter */}
             <a
               href="https://x.com/HKINTERNATION22"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 rounded-lg text-muted-foreground hover:text-foreground hover:bg-card hover:scale-110 transition-all"
+              aria-label="X (Twitter) Profile"
+              className="p-2.5 rounded-xl border border-border bg-card text-muted-foreground transition-all duration-300 hover:text-[#1DA1F2] hover:border-[#1DA1F2]/40 hover:bg-[#1DA1F2]/10 hover:scale-110 hover:shadow-sm"
             >
               <Twitter className="w-5 h-5" />
             </a>
 
+            {/* Instagram */}
             <a
               href="https://www.instagram.com/_harikrishnan_01/"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 rounded-lg text-muted-foreground hover:text-foreground hover:bg-card hover:scale-110 transition-all"
+              aria-label="Instagram Profile"
+              className="p-2.5 rounded-xl border border-border bg-card text-muted-foreground transition-all duration-300 hover:text-[#E4405F] hover:border-[#E4405F]/40 hover:bg-[#E4405F]/10 hover:scale-110 hover:shadow-sm"
             >
               <Instagram className="w-5 h-5" />
             </a>

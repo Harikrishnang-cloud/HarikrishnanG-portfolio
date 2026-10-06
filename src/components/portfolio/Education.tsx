@@ -3,16 +3,23 @@ import { GraduationCap, Calendar, BookOpen } from "lucide-react";
 
 const education = [
   {
+    degree: "Brototype Software Training Institute",
+    institution: "Kochi, Ernakulam",
+    year: "July 2024 - December 2025",
+    project: "Booklove ecommerce platform, CodeRunner Online Code Editor",
+    projectDesc: "Hands-on experience in MERN stack development, including React.js, Node.js, Express.js, MongoDB, REST APIs, and Git. Strengthened problem-solving skills through practical projects and coding challenges.",
+  },
+  {
     degree: "MSc Mathematics",
     institution: "Kariavattom Campus, Thiruvananthapuram",
-    year: "May 2022",
+    year: "July 2020 - May 2022",
     project: "Analytic Solutions of Integral Equations",
     projectDesc: "Solving integral equations using analytical methods. Studied Volterra and Fredholm equations with applications in mathematical physics and engineering.",
   },
   {
     degree: "BSc Mathematics",
     institution: "Sree Narayana College, Chathannur, Kollam",
-    year: "March 2020",
+    year: "August 2017 - March 2020",
     project: "Polynomial Rings",
     projectDesc: "Exploring the algebraic structure and properties of polynomial rings with examples from abstract algebra.",
   },
@@ -20,7 +27,7 @@ const education = [
 
 const Education = () => {
   return (
-    <section className="py-20 bg-muted/30" id="education">
+    <section className="py-20 bg-background" id="education">
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
