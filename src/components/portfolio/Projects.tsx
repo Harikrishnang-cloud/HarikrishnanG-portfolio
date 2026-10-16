@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ExternalLink, Github, Building2, ShoppingBag, Users, GraduationCap, Trophy, Plane, Bot, Zap, CheckCircle2, Globe2, Workflow, Sparkles, ArrowRight, ShieldCheck, Database, Mail, TableProperties, ZoomIn, X } from "lucide-react";
+import { ExternalLink, Github, Building2, ShoppingBag, Users, GraduationCap, Trophy, Plane, BookOpen, Bot, Zap, CheckCircle2, Globe2, Workflow, Sparkles, ArrowRight, ShieldCheck, Database, Mail, TableProperties, ZoomIn, X } from "lucide-react";
 
 export interface MajorProject {
   id: string;
@@ -134,12 +134,30 @@ const majorProjects: MajorProject[] = [
     liveUrl: "https://eshaareuae.com/",
     githubUrl: "https://github.com/eshaare-developers/eshaare-tour",
   },
+  {
+    id: "book-love",
+    title: "7. Book-Love",
+    subtitle: "Full-Stack Online Bookstore & E-Commerce Platform",
+    category: "E-Commerce & Web App",
+    image: "/booklove.jpg",
+    icon: BookOpen,
+    description:
+      "Full-stack online bookstore featuring category browsing, wishlist management, discount coupons, verified reviews and ratings, comprehensive order workflows, and administrative analytics.",
+    features: [
+      "User authentication with Passport.js including Google OAuth integration",
+      "Seamless online payment processing via Razorpay gateway",
+      "Comprehensive admin dashboard for inventory management, orders, discounts, and sales reporting",
+      "Cloud-based asset storage and media management powered by Cloudinary",
+    ],
+    techStack: ["React.js", "Node.js", "Express.js", "MongoDB", "Passport.js", "Razorpay", "Cloudinary", "Tailwind CSS"],
+    githubUrl: "https://github.com/Harikrishnang-cloud",
+  },
 ];
 
 // Automation Workflows for the dedicated n8n showcase
 const automationProjects = [
   {
-    title: "7. AI-Powered Content Research & Generation",
+    title: "8. AI-Powered Content Research & Generation",
     icon: Bot,
     description:
       "Automates web research by searching Google, extracting and filtering relevant content, removing duplicates, and using AI to generate structured documents from the collected information.",
@@ -152,7 +170,7 @@ const automationProjects = [
     ],
   },
   {
-    title: "8. Smart Email & Document Automation",
+    title: "9. Smart Email & Document Automation",
     icon: Mail,
     description:
       "Automates data processing using Google Sheets, conditional logic, file handling, and JavaScript to generate and send personalized emails while updating records automatically.",
@@ -165,7 +183,7 @@ const automationProjects = [
     ],
   },
   {
-    title: "9. AI-Powered Data Processing Workflow",
+    title: "10. AI-Powered Data Processing Workflow",
     icon: Workflow,
     description:
       "Processes spreadsheet records through HTTP requests and an AI agent powered by Google Gemini, applies JavaScript-based logic, and updates documents based on conditional results.",

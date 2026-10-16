@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 const skillCategories = [
   {
     title: "Languages",
-    skills: ["JavaScript", "TypeScript", "C", "Java"],
+    skills: ["JavaScript", "TypeScript", "C", "C++", "Java"],
     color: "from-blue-500 to-cyan-500",
   },
   {
@@ -13,7 +13,7 @@ const skillCategories = [
   },
   {
     title: "Backend",
-    skills: ["Node.js", "Express.js","NestJS", "TypeScript","REST APIs","JWT Auth"],
+    skills: ["Node.js", "Express.js","NestJS", "TypeScript","REST APIs","JWT Auth", "OAuth 2.0"],
     color: "from-green-500 to-emerald-500",
   },
   {
@@ -23,7 +23,7 @@ const skillCategories = [
   },
   {
     title: "Cloud & DevOps",
-    skills: ["Docker","AWS","Nginx", "Linux", "PM2", "CI/CD", "Vercel", "Cloudinary"],
+    skills: ["Docker","AWS","Nginx", "Linux", "PM2", "CI/CD", "GitHub Actions", "Vercel", "Cloudinary"],
     color: "from-red-500 to-rose-500",
   },
   {
@@ -150,7 +150,7 @@ const Skills = () => {
             </div>
             <div className="flex items-center gap-4">
   <div className="flex items-center gap-2">
-    <span className="text-4xl font-bold text-primary">50+</span>
+    <span className="text-4xl font-bold text-primary">100+</span>
     <span className="text-muted-foreground">
       Problems<br />Solved
     </span>

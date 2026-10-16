@@ -71,8 +71,8 @@ const experiences: ExperienceItem[] = [
     role: "Software Engineer",
     company: "Asia Softlab Pvt. Ltd.",
     location: "Thiruvananthapuram, Kerala",
-    period: "January 2026 - Present",
-    startDate: "2026-01",
+    period: "February 2026 - Present",
+    startDate: "2026-02",
     endDate: "Present",
     type: "Full-time",
     description:
