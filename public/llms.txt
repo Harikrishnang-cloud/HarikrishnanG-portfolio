@@ -1,0 +1,36 @@
+# Harikrishnan G - Portfolio & Professional Information
+> Software Developer / Web Developer based in Kerala, India.
+
+## Summary
+Harikrishnan G is a Software Developer specializing in building scalable full-stack web platforms, enterprise SaaS applications, drone technology systems, and AI automation workflows. He holds an MSc and BSc in Mathematics and brings strong analytical, algorithmic, and engineering skills to full-stack software development.
+
+## Professional Profiles
+- Official Website: https://harikrishnang.vercel.app/
+- LinkedIn: https://www.linkedin.com/in/harikrishnan-g-1315721b7/
+- GitHub: https://github.com/Harikrishnang-cloud
+- LeetCode: https://leetcode.com/u/HK_INTERNATIONAL/
+- X (Twitter): https://x.com/HKINTERNATION22
+- Instagram: https://www.instagram.com/_harikrishnan_01/
+
+## Core Skills
+- Languages: JavaScript, TypeScript, C, Java, HTML5, CSS3
+- Frontend: React.js, Next.js, Redux Toolkit, Zustand, Tailwind CSS
+- Backend: Node.js, Express.js, NestJS, REST APIs, JWT Authentication
+- Databases: MongoDB, PostgreSQL, SQL, Redis, Firebase
+- Cloud & DevOps: Docker, AWS (EC2, S3, Lambda, Load Balancer), Nginx, Linux, CI/CD, Vercel
+- AI & Automation: n8n, AI Agents, RAG, Gemini API
+- Testing & APIs: Playwright, Payment Gateways, Email APIs
+
+## Experience
+- Software Engineer at Asia Softlab Pvt. Ltd. (Thiruvananthapuram, Kerala | January 2026 - Present): Developing high-performance full-stack web platforms, RESTful APIs, enterprise workflows, and cloud deployments.
+- Freelance Web Developer & AI Automation Engineer (Self-Employed | Remote | January 2025 - Present): Building responsive web platforms, booking systems, e-commerce solutions, and AI-driven automation pipelines.
+
+## Major Projects
+- Asia Softlab Pvt. Ltd. (Corporate Drone Technology & Service Platform): Official corporate platform for drone surveying, mapping, and DGCA pilot training registration. Live: https://asiasoftlab.in
+- Asia Drone Store (ADS): Enterprise e-commerce platform for professional UAVs, payloads, and accessories. Live: https://www.asiadronestore.com
+- Employee Management System (EMS): Internal enterprise SaaS application for biometric/web attendance, task assignments, and HR workflows. Live: https://demo.asiasoftlab.in/
+
+## Contact
+- Email: harikrishnangmonkuttan@gmail.com
+- Phone: +91 7907389098
+- Location: Kollam, Kerala, India

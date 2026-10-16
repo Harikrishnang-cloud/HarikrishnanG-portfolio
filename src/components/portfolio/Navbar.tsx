@@ -65,7 +65,12 @@ const Navbar = () => {
 
             {/* CTA Button */}
             <div className="hidden md:block">
-              <a href="/HARIKRISHNANG(Resume).pdf" download>
+              <a 
+                href="/Harikrishnan_G_Resume.pdf" 
+                download="Harikrishnan_G_Resume.pdf" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
                 <Button size="sm" className="gap-2">
                   <Download className="w-4 h-4" />
                   Download Resume
@@ -118,10 +123,18 @@ const Navbar = () => {
                     {link.name}
                   </motion.a>
                 ))}
-                <Button className="mt-4 gap-2">
-                  <Download className="w-4 h-4" />
-                  Download CV
-                </Button>
+                <a 
+                  href="/Harikrishnan_G_Resume.pdf" 
+                  download="Harikrishnan_G_Resume.pdf" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-full"
+                >
+                  <Button className="w-full mt-4 gap-2">
+                    <Download className="w-4 h-4" />
+                    Download Resume
+                  </Button>
+                </a>
               </div>
             </motion.div>
           </motion.div>

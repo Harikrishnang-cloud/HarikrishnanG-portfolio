@@ -136,6 +136,7 @@ const Hero = () => {
                 href="https://github.com/Harikrishnang-cloud"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Harikrishnan G GitHub Profile"
                 className="p-3 rounded-full bg-foreground text-background hover:bg-foreground/90 transition-colors"
               >
                 <Github className="w-5 h-5" />
@@ -144,6 +145,7 @@ const Hero = () => {
                 href="https://www.linkedin.com/in/harikrishnan-g-1315721b7/"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Harikrishnan G LinkedIn Profile"
                 className="p-3 rounded-full bg-foreground text-background hover:bg-foreground/90 transition-colors"
               >
                 <Linkedin className="w-5 h-5" />
@@ -152,6 +154,7 @@ const Hero = () => {
                 href="https://leetcode.com/u/HK_INTERNATIONAL/"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Harikrishnan G LeetCode Profile"
                 className="p-3 rounded-full bg-foreground text-background hover:bg-foreground/90 transition-colors"
               >
                 <Code className="w-5 h-5" />
