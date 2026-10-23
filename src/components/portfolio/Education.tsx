@@ -27,8 +27,8 @@ const education = [
 
 const Education = () => {
   return (
-    <section className="py-20 bg-background" id="education">
-      <div className="container mx-auto px-6">
+    <section className="py-20 bg-transparent relative" id="education">
+      <div className="container mx-auto px-6 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -64,7 +64,7 @@ const Education = () => {
                 {/* Timeline dot */}
                 <div className="absolute left-6 w-4 h-4 rounded-full bg-primary border-4 border-background hidden md:block" />
 
-                <div className="md:ml-20 p-6 rounded-2xl bg-card border border-border hover:border-primary/50 transition-colors">
+                <div className="md:ml-20 p-6 rounded-2xl bg-card border border-border hover:border-primary/50 transition-colors shadow-sm relative z-10">
                   <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
                     <div className="flex items-center gap-3 mb-2 md:mb-0">
                       <div className="p-2 rounded-lg bg-primary/10">

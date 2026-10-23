@@ -8,22 +8,22 @@ const skillCategories = [
   },
   {
     title: "Frontend",
-    skills: ["React.js","Next.js","Redux Toolkit","Zustand", "Tailwind CSS", "HTML/CSS"],
+    skills: ["React.js", "Next.js", "Redux Toolkit", "Zustand", "Tailwind CSS", "HTML/CSS"],
     color: "from-purple-500 to-pink-500",
   },
   {
     title: "Backend",
-    skills: ["Node.js", "Express.js","NestJS", "TypeScript","REST APIs","JWT Auth", "OAuth 2.0"],
+    skills: ["Node.js", "Express.js", "NestJS", "TypeScript", "REST APIs", "JWT Auth", "OAuth 2.0"],
     color: "from-green-500 to-emerald-500",
   },
   {
     title: "Database",
-    skills: ["MongoDB","PostgreSQL","SQL", "Firebase", "Redis"],
+    skills: ["MongoDB", "PostgreSQL", "SQL", "Firebase", "Redis"],
     color: "from-orange-500 to-amber-500",
   },
   {
     title: "Cloud & DevOps",
-    skills: ["Docker","AWS","Nginx", "Linux", "PM2", "CI/CD", "GitHub Actions", "Vercel", "Cloudinary"],
+    skills: ["Docker", "AWS", "Nginx", "Linux", "PM2", "CI/CD", "GitHub Actions", "Vercel", "Cloudinary"],
     color: "from-red-500 to-rose-500",
   },
   {
@@ -32,18 +32,18 @@ const skillCategories = [
     color: "from-indigo-500 to-violet-500",
   },
   {
-    title:"AI & Automation",
-    skills:["n8n","AI Agents", "RAG", "Gemini API"],
+    title: "AI & Automation",
+    skills: ["n8n", "AI Agents", "RAG", "Gemini API"],
     color: "from-yellow-500 to-amber-500",
   },
   {
-    title:"Testing",
-    skills:["Playwright"],
+    title: "Testing",
+    skills: ["Playwright"],
     color: "from-blue-500 to-cyan-500",
   },
   {
-    title:"API Integration",
-    skills:["Payment Gateways","Email APIs","Notification APIs"],
+    title: "API Integration",
+    skills: ["Payment Gateways", "Email APIs", "Notification APIs"],
     color: "from-purple-500 to-pink-500",
   }
 ];
@@ -69,8 +69,8 @@ const itemVariants = {
 
 const Skills = () => {
   return (
-    <section className="py-20 bg-muted/30" id="skills">
-      <div className="container mx-auto px-6">
+    <section className="py-20 bg-transparent relative" id="skills">
+      <div className="container mx-auto px-6 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -101,11 +101,11 @@ const Skills = () => {
               key={category.title}
               variants={itemVariants}
               whileHover={{ y: -5, transition: { duration: 0.2 } }}
-              className="group relative p-6 rounded-2xl bg-card border border-border overflow-hidden"
+              className="group relative p-6 rounded-2xl bg-card border border-border shadow-sm overflow-hidden z-10"
             >
               {/* Gradient background on hover */}
               <div className={`absolute inset-0 bg-gradient-to-br ${category.color} opacity-0 group-hover:opacity-5 transition-opacity duration-300`} />
-              
+
               <div className="relative z-10">
                 <div className={`inline-flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-br ${category.color} mb-4`}>
                   <span className="text-white font-bold text-lg">
@@ -149,22 +149,22 @@ const Skills = () => {
               </p>
             </div>
             <div className="flex items-center gap-4">
-  <div className="flex items-center gap-2">
-    <span className="text-4xl font-bold text-primary">100+</span>
-    <span className="text-muted-foreground">
-      Problems<br />Solved
-    </span>
-  </div>
+              <div className="flex items-center gap-2">
+                <span className="text-4xl font-bold text-primary">100+</span>
+                <span className="text-muted-foreground">
+                  Problems<br />Solved
+                </span>
+              </div>
 
-  <a
-    href="https://leetcode.com/u/HK_INTERNATIONAL/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="px-3 py-1.5 text-sm rounded-lg border border-border text-muted-foreground hover:text-primary hover:border-primary transition"
-  >
-    From LeetCode
-  </a>
-</div>
+              <a
+                href="https://leetcode.com/u/HK_INTERNATIONAL/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-3 py-1.5 text-sm rounded-lg border border-border text-muted-foreground hover:text-primary hover:border-primary transition"
+              >
+                From LeetCode
+              </a>
+            </div>
 
 
           </div>

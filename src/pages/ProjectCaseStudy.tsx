@@ -75,7 +75,7 @@ const ProjectCaseStudy = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background flex flex-col justify-between selection:bg-primary/20">
+    <div className="min-h-screen bg-transparent relative flex flex-col justify-between selection:bg-primary/20">
       <SEOHead
         title={project.metaTitle}
         description={project.metaDescription}

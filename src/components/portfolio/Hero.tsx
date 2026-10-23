@@ -1,15 +1,19 @@
 import { motion } from "framer-motion";
 import { Mail, Phone, MapPin, Github, Linkedin, Code } from "lucide-react";
 import profilePhoto from "@/assets/Hari.jpg";
+import TechnicalParticles from "./TechnicalParticles";
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-background via-background to-accent/20">
+    <section className="min-h-screen flex items-center justify-center relative overflow-hidden bg-transparent">
+      {/* Technical Particles Background - ONLY in Hero */}
+      <TechnicalParticles />
+
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
           className="absolute top-20 left-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl"
-          animate={{ 
+          animate={{
             scale: [1, 1.2, 1],
             x: [0, 30, 0],
             y: [0, -20, 0]
@@ -18,7 +22,7 @@ const Hero = () => {
         />
         <motion.div
           className="absolute bottom-20 right-10 w-96 h-96 bg-accent/20 rounded-full blur-3xl"
-          animate={{ 
+          animate={{
             scale: [1.2, 1, 1.2],
             x: [0, -30, 0],
             y: [0, 20, 0]

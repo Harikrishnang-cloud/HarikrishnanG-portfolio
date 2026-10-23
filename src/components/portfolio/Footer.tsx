@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import {Github,Linkedin,Code2,Twitter,Instagram,MapPin,Mail,Phone,
-  FileText,ExternalLink,Bot,Sparkles,
+import {
+  Github, Linkedin, Code2, Twitter, Instagram, MapPin, Mail, Phone,
+  FileText, ExternalLink, Bot, Sparkles,
 } from "lucide-react";
 
 const Footer = () => {
@@ -38,7 +39,7 @@ const Footer = () => {
       href: "/projects/eshaare-tours-dubai",
       tag: "Next.js Travel Platform",
     },
-    
+
   ];
 
   const socialLinks = [
@@ -80,17 +81,17 @@ const Footer = () => {
       <div className="w-full px-4 sm:px-6 md:px-10 lg:px-14 xl:px-20 mx-auto">
         {/* Main 4-Column Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 pb-12 border-b border-border/70">
-          
+
           {/* Column 1: Identity, Bio & Geographic Entity Signals (GEO & AEO) */}
           <div className="lg:col-span-4 space-y-4">
             <Link to="/" className="inline-block text-2xl font-bold text-foreground tracking-tight hover:opacity-90 transition-opacity">
               HARIKRISHNAN G<span className="text-primary">.</span>
             </Link>
-            
+
             <p className="text-xs uppercase tracking-wider font-semibold text-primary">
               Software Engineer · AI Engineer · Full-Stack Developer
             </p>
-            
+
             <p className="text-sm text-muted-foreground leading-relaxed pr-2">
               Software Engineer and Full-Stack Developer based in Kerala, India. Specializing in high-performance React.js, Next.js, and MERN stack applications, enterprise SaaS solutions, and intelligent AI automation workflows.
             </p>
@@ -172,7 +173,7 @@ const Footer = () => {
                   href="/#projects"
                   className="text-xs text-muted-foreground hover:text-foreground transition-colors inline-flex items-center gap-1 mt-1 font-medium"
                 >
-                  
+
                   <span>View All 10+ Projects &amp; Automations &rarr;</span>
                 </a>
               </li>
@@ -184,7 +185,7 @@ const Footer = () => {
             <p className="text-xs font-bold uppercase tracking-wider text-foreground">
               Contact &amp; Discoverability
             </p>
-            
+
             <div className="space-y-2.5 text-xs md:text-sm text-muted-foreground">
               <div>
                 <span className="text-[12px] text-muted-foreground block">Direct Email</span>
@@ -204,7 +205,7 @@ const Footer = () => {
                 >
                   +91 7907389098
                 </a>
-                
+
                 <a
                   href="tel:+919745860278"
                   className="text-foreground hover:text-primary hover:underline transition-colors font-medium"
@@ -256,7 +257,7 @@ const Footer = () => {
           </p>
 
           <p className="text-center sm:text-right flex items-center gap-1.5">
-            
+
             <span>
               Designed, Developed, Tested &amp; Deployed by{" "}
               <a

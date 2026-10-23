@@ -11,7 +11,7 @@ import Footer from "@/components/portfolio/Footer";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-transparent relative">
       <SEOHead
         title="Harikrishnan G | Software Engineer & Full-Stack Developer"
         description="Harikrishnan G is a Software Engineer and Full-Stack Developer based in Kerala, India. Specializing in React, Next.js, MERN stack web applications, and enterprise SaaS systems."

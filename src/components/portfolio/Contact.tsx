@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import {
-  Mail,Phone,MapPin,Send,Github,Linkedin,Code,Twitter,Instagram} from "lucide-react";
+  Mail, Phone, MapPin, Send, Github, Linkedin, Code, Twitter, Instagram
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -19,11 +20,11 @@ const Contact = () => {
     setLoading(true);
 
     emailjs.sendForm(
-  import.meta.env.VITE_EMAILJS_SERVICE_ID,
-  import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-  formRef.current,
-  import.meta.env.VITE_EMAILJS_PUBLIC_KEY
-)
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+      formRef.current,
+      import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+    )
 
       .then(() => {
         toast.success("Message sent successfully");
@@ -37,15 +38,15 @@ const Contact = () => {
       });
   };
   console.log("ENV CHECK:", {
-  service: import.meta.env.VITE_EMAILJS_SERVICE_ID,
-  template: import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-  publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
-});
+    service: import.meta.env.VITE_EMAILJS_SERVICE_ID,
+    template: import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+    publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+  });
 
 
   return (
-    <section className="py-20 bg-background" id="contact">
-      <div className="container mx-auto px-6">
+    <section className="py-20 bg-transparent relative" id="contact">
+      <div className="container mx-auto px-6 relative z-10">
 
         {/* Heading */}
         <motion.div
@@ -81,7 +82,7 @@ const Contact = () => {
               <motion.a
                 href="mailto:harikrishnangmonkuttan@gmail.com"
                 whileHover={{ x: 5 }}
-                className="flex items-center gap-4 p-4 rounded-xl bg-card border"
+                className="flex items-center gap-4 p-4 rounded-xl bg-card border border-border shadow-sm relative z-10"
               >
                 <div className="p-3 rounded-lg bg-primary/10">
                   <Mail className="w-5 h-5 text-primary" />
@@ -97,7 +98,7 @@ const Contact = () => {
               <motion.a
                 href="tel:+917907389098"
                 whileHover={{ x: 5 }}
-                className="flex items-center gap-4 p-4 rounded-xl bg-card border"
+                className="flex items-center gap-4 p-4 rounded-xl bg-card border border-border shadow-sm relative z-10"
               >
                 <div className="p-3 rounded-lg bg-primary/10">
                   <Phone className="w-5 h-5 text-primary" />
@@ -108,7 +109,7 @@ const Contact = () => {
                 </div>
               </motion.a>
 
-              <div className="flex items-center gap-4 p-4 rounded-xl bg-card border">
+              <div className="flex items-center gap-4 p-4 rounded-xl bg-card border border-border shadow-sm relative z-10">
                 <div className="p-3 rounded-lg bg-primary/10">
                   <MapPin className="w-5 h-5 text-primary" />
                 </div>
@@ -121,7 +122,7 @@ const Contact = () => {
 
             {/* Social Links */}
             <div className="flex gap-3">
-              {[ 
+              {[
                 { icon: Github, link: "https://github.com/Harikrishnang-cloud", hoverClass: "hover:text-foreground hover:border-foreground/40 hover:bg-muted/80", label: "GitHub" },
                 { icon: Linkedin, link: "https://www.linkedin.com/in/harikrishnan-g-1315721b7/", hoverClass: "hover:text-[#0A66C2] hover:border-[#0A66C2]/40 hover:bg-[#0A66C2]/10", label: "LinkedIn" },
                 { icon: Code, link: "https://leetcode.com/u/HK_INTERNATIONAL/", hoverClass: "hover:text-[#FFA116] hover:border-[#FFA116]/40 hover:bg-[#FFA116]/10", label: "LeetCode" },
@@ -136,7 +137,7 @@ const Contact = () => {
                   aria-label={label}
                   whileHover={{ scale: 1.1, y: -2 }}
                   whileTap={{ scale: 0.95 }}
-                  className={`p-3 rounded-xl bg-card border border-border text-muted-foreground transition-all duration-300 shadow-sm ${hoverClass}`}
+                  className={`p-3 rounded-xl bg-card border border-border text-muted-foreground transition-all duration-300 shadow-sm relative z-10 ${hoverClass}`}
                 >
                   <Icon className="w-5 h-5" />
                 </motion.a>
@@ -150,7 +151,7 @@ const Contact = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="p-8 rounded-2xl bg-card border"
+            className="p-8 rounded-2xl bg-card border border-border shadow-sm relative z-10"
           >
             <h3 className="text-xl font-bold mb-6">Send a Message</h3>
 

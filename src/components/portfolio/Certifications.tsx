@@ -85,8 +85,8 @@ const Certifications = () => {
   const [selectedImage, setSelectedImage] = useState<{ src: string; title: string } | null>(null);
 
   return (
-    <section className="py-20 bg-muted/30" id="certifications">
-      <div className="container mx-auto px-6">
+    <section className="py-20 bg-transparent relative" id="certifications">
+      <div className="container mx-auto px-6 relative z-10">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -120,7 +120,7 @@ const Certifications = () => {
               variants={cardVariants}
               whileHover={{ y: -5 }}
               transition={{ duration: 0.2 }}
-              className="group flex flex-col justify-between rounded-2xl bg-card border border-border hover:border-primary/50 transition-all duration-300 shadow-sm hover:shadow-md overflow-hidden"
+              className="group flex flex-col justify-between rounded-2xl bg-card border border-border hover:border-primary/50 transition-all duration-300 shadow-sm hover:shadow-md overflow-hidden relative z-10"
             >
               {/* Certificate Image with click-to-preview */}
               <div

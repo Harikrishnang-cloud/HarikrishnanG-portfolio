@@ -7,7 +7,7 @@ interface ExperienceItem {
   location: string;
   period: string;
   startDate: string;
-  endDate?: string;  
+  endDate?: string;
   type: string;
   description: string;
   highlights: string[];
@@ -83,7 +83,7 @@ const experiences: ExperienceItem[] = [
       "Hands-on experience with Docker, CI/CD pipelines, AWS EC2, Lambda, S3 Bucket, Load Balancer, Nginx reverse proxy",
       "Participated in rigorous code reviews, debugging sprints, and daily problem-solving challenges",
     ],
-    skills: ["React.js", "Node.js", "Express.js", "TypeScript", "Next.js", "MERN Stack", "Nest.js", "n8n", "Docker","K8s", "AWS"],
+    skills: ["React.js", "Node.js", "Express.js", "TypeScript", "Next.js", "MERN Stack", "Nest.js", "n8n", "Docker", "K8s", "AWS"],
   },
   {
     role: "Freelance Full-Stack Developer & AI Automation Engineer",
@@ -123,8 +123,8 @@ const experiences: ExperienceItem[] = [
 
 const Experience = () => {
   return (
-    <section className="py-20 bg-muted/30" id="experience">
-      <div className="container mx-auto px-6">
+    <section className="py-20 bg-transparent relative" id="experience">
+      <div className="container mx-auto px-6 relative z-10">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -167,7 +167,7 @@ const Experience = () => {
                   <div className="absolute left-6 w-4 h-4 rounded-full bg-primary border-4 border-background hidden md:block" />
 
                   {/* Experience Card */}
-                  <div className="md:ml-20 p-6 md:p-8 rounded-2xl bg-card border border-border hover:border-primary/50 transition-all duration-300 shadow-sm hover:shadow-md">
+                  <div className="md:ml-20 p-6 md:p-8 rounded-2xl bg-card border border-border hover:border-primary/50 transition-all duration-300 shadow-sm hover:shadow-md relative z-10">
                     {/* Header details */}
                     <div className="flex flex-col md:flex-row md:items-start justify-between gap-4 mb-4">
                       <div className="flex items-start gap-3">

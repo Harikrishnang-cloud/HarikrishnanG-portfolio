@@ -207,8 +207,8 @@ const Projects = () => {
   const [selectedImage, setSelectedImage] = useState<{ src: string; title: string; liveUrl?: string } | null>(null);
 
   return (
-    <section className="py-20 bg-background" id="projects">
-      <div className="container mx-auto px-6">
+    <section className="py-20 bg-transparent relative" id="projects">
+      <div className="container mx-auto px-6 relative z-10">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -241,7 +241,7 @@ const Projects = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.1 }}
-                className="rounded-2xl bg-card border border-border hover:border-primary/50 transition-all duration-300 shadow-sm hover:shadow-lg overflow-hidden"
+                className="rounded-2xl bg-card border border-border hover:border-primary/50 transition-all duration-300 shadow-sm hover:shadow-lg overflow-hidden relative z-10"
               >
                 <div className={`grid lg:grid-cols-12 gap-8 items-center p-6 md:p-8 ${isEven ? "" : "lg:grid-flow-dense"}`}>
                   {/* Visual / Screenshot Preview Panel */}
@@ -473,7 +473,7 @@ const Projects = () => {
                     key={wIdx}
                     whileHover={{ y: -4 }}
                     transition={{ duration: 0.2 }}
-                    className="p-5 rounded-2xl bg-background border border-border hover:border-primary/40 transition-all duration-200 shadow-sm"
+                    className="p-5 rounded-2xl bg-card border border-border hover:border-primary/40 transition-all duration-200 shadow-sm relative z-10"
                   >
                     <div className="flex items-start gap-3.5 mb-3">
                       <div className="p-2.5 rounded-xl bg-primary/10 text-primary shrink-0">
