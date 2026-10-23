@@ -137,6 +137,7 @@ const majorProjects: MajorProject[] = [
     techStack: ["Next.js", "React.js", "TypeScript", "REST APIs", "Tailwind CSS", "Payment Gateway", "EmailJS"],
     liveUrl: "https://eshaareuae.com/",
     githubUrl: "https://github.com/eshaare-developers/eshaare-tour",
+    caseStudyUrl: "/projects/eshaare-tours-dubai",
   },
   {
     id: "book-love",

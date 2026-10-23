@@ -82,6 +82,29 @@ const caseStudiesData = [
       "Configured performance optimizations including asset compression, responsive layouts, and SEO metadata."
     ],
     techStack: ["React.js", "JavaScript (ES6+)", "Tailwind CSS", "HTML5", "CSS3", "Plesk Hosting", "REST APIs"]
+  },
+  {
+    slug: "eshaare-tours-dubai",
+    title: "Eshaare Tours Dubai",
+    subtitle: "Travel, Hotel & Excursion Booking Platform",
+    category: "Next.js Travel & Hospitality",
+    targetRole: "Full-Stack Next.js Developer",
+    location: "Dubai, UAE · Remote Engineering from Kerala",
+    metaTitle: "Eshaare Tours Dubai Case Study | Next.js Developer India - Harikrishnan G",
+    metaDescription: "Case study of Eshaare Tours Dubai, a modern travel, hotel, and safari booking web application built with Next.js, React, and REST APIs by Harikrishnan G.",
+    canonicalUrl: "https://harikrishnang.vercel.app/projects/eshaare-tours-dubai",
+    liveUrl: "https://eshaareuae.com/",
+    githubUrl: "https://github.com/eshaare-developers/eshaare-tour",
+    overview: "Eshaare Tours is an international tourism and travel company based in Dubai, UAE. The client required a modern digital booking engine allowing travelers to book flights, luxury hotel packages, desert safaris, and custom excursion itineraries with frictionless mobile checkouts and multi-currency support.",
+    problemStatement: "Legacy tourism websites in the GCC region frequently suffer from slow mobile load speeds and complex reservation flows. The client needed a high-performance web platform optimized for fast international loading, clear pricing tiers, automated customer voucher dispatch, and high conversion rates across mobile and desktop devices.",
+    contributions: [
+      "Architected and implemented the frontend and API integration using Next.js, React.js, and TypeScript.",
+      "Engineered responsive booking flows with form validation and real-time package price calculations.",
+      "Integrated automated email confirmations and reservation vouchers via EmailJS.",
+      "Optimized assets and page rendering for fast international First Contentful Paint (FCP) across GCC and global travelers.",
+      "Designed clean, mobile-first travel landing pages tailored for UAE excursions, flight inquiries, and desert safari bookings."
+    ],
+    techStack: ["Next.js", "React.js", "TypeScript", "Tailwind CSS", "REST APIs", "EmailJS"]
   }
 ];
 

@@ -75,10 +75,9 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="pt-16 pb-12 bg-muted/40 border-t border-border relative overflow-hidden" aria-labelledby="footer-heading">
-      <h2 id="footer-heading" className="sr-only">Footer Information & Navigation</h2>
-      
-      <div className="container mx-auto px-6">
+    <footer className="w-full pt-16 pb-12 bg-muted/40 border-t border-border relative overflow-hidden" aria-labelledby="footer-heading">
+      <h2 id="footer-heading" className="sr-only">Footer Information &amp; Navigation</h2>
+      <div className="w-full px-4 sm:px-6 md:px-10 lg:px-14 xl:px-20 mx-auto">
         {/* Main 4-Column Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 pb-12 border-b border-border/70">
           
@@ -96,7 +95,7 @@ const Footer = () => {
               Software Engineer and Full-Stack Developer based in Kerala, India. Specializing in high-performance React.js, Next.js, and MERN stack applications, enterprise SaaS solutions, and intelligent AI automation workflows.
             </p>
 
-            <div className="flex items-center gap-2 text-xs text-muted-foreground pt-1">
+            <div className="flex items-center gap-2 text-sm text-muted-foreground pt-1">
               <MapPin className="w-3.5 h-3.5 text-primary shrink-0" />
               <span>Kollam &amp; Thiruvananthapuram, Kerala, India</span>
             </div>
@@ -253,13 +252,22 @@ const Footer = () => {
         {/* Bottom Bar: Copyright & Engineering Badges */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-muted-foreground">
           <p className="text-center sm:text-left">
-            &copy; {currentYear} <span className="text-foreground font-semibold">Harikrishnan G</span>. All rights reserved.
+            &copy; {currentYear} <span className="text-foreground font-semibold">Harikrishnan G ❤️</span>All rights reserved.
           </p>
 
           <p className="text-center sm:text-right flex items-center gap-1.5">
-            <span>Built with React, TypeScript &amp; Vite</span>
-            <span>·</span>
-            <span>Deployed on Vercel</span>
+            
+            <span>
+              Designed, Developed, Tested &amp; Deployed by{" "}
+              <a
+                href="https://www.linkedin.com/in/harikrishnan-g-1315721b7/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-foreground hover:text-[#0A66C2] underline decoration-primary/40 hover:decoration-[#0A66C2] transition-colors font-medium"
+              >
+                Harikrishnan G
+              </a>
+            </span>
           </p>
         </div>
       </div>

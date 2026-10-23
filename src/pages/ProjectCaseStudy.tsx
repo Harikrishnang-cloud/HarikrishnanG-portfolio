@@ -1,6 +1,6 @@
 import { useParams, Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import {ArrowLeft,ExternalLink,Github,CheckCircle2,Layers,Cpu,ShieldCheck,MapPin,Calendar,Briefcase,AlertCircle,HelpCircle,TrendingUp,FolderGit2} from "lucide-react";
+import { ArrowLeft, ExternalLink, Github, CheckCircle2, Layers, Cpu, ShieldCheck, MapPin, Calendar, Briefcase, AlertCircle, HelpCircle, TrendingUp, FolderGit2 } from "lucide-react";
 import { caseStudies } from "@/data/caseStudies";
 import SEOHead from "@/components/portfolio/SEOHead";
 import Navbar from "@/components/portfolio/Navbar";
@@ -234,7 +234,7 @@ const ProjectCaseStudy = () => {
             {/* Responsibilities & Contributions */}
             <section className="mb-14 p-6 md:p-8 rounded-2xl bg-muted/30 border border-border" aria-labelledby="contributions-heading">
               <h2 id="contributions-heading" className="text-2xl font-bold text-foreground mb-6 flex items-center gap-2">
-               
+
                 <span>My Responsibilities & Technical Contributions</span>
               </h2>
               <ul className="space-y-3.5">
@@ -250,7 +250,7 @@ const ProjectCaseStudy = () => {
             {/* Verified Tech Stack Breakdown */}
             <section className="mb-14" aria-labelledby="tech-stack-heading">
               <h2 id="tech-stack-heading" className="text-2xl font-bold text-foreground mb-6 flex items-center gap-2">
-               
+
                 <span>Verified Technical Stack</span>
               </h2>
 
@@ -304,7 +304,7 @@ const ProjectCaseStudy = () => {
             {/* Key Features Implemented */}
             <section className="mb-14" aria-labelledby="features-heading">
               <h2 id="features-heading" className="text-2xl font-bold text-foreground mb-6 flex items-center gap-2">
-               
+
                 <span>Key Features & Functional Highlights</span>
               </h2>
 
@@ -343,7 +343,7 @@ const ProjectCaseStudy = () => {
             {/* Engineering Challenges & Solutions */}
             <section className="mb-14" aria-labelledby="challenges-heading">
               <h2 id="challenges-heading" className="text-2xl font-bold text-foreground mb-6 flex items-center gap-2">
-               
+
                 <span>Technical Challenges & Engineering Solutions</span>
               </h2>
 
