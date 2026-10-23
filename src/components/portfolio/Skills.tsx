@@ -85,7 +85,7 @@ const Skills = () => {
             Technologies I Work With
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            From frontend to backend, databases to cloud - here's my tech stack that powers scalable applications
+            From frontend to backend, databases to cloud - specialized in React.js, Next.js, and MERN stack engineering to build scalable web applications
           </p>
         </motion.div>
 

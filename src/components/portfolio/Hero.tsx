@@ -45,7 +45,7 @@ const Hero = () => {
               <div className="absolute inset-2 bg-background rounded-full overflow-hidden">
                 <img
                   src={profilePhoto}
-                  alt="Harikrishnan G"
+                  alt="Harikrishnan G - Software Engineer and Full-Stack Developer"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -75,7 +75,7 @@ const Hero = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
             >
               <span className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
-                Software Engineer
+                Software Engineer · AI Engineer · Full-Stack Developer
               </span>
             </motion.div>
 
@@ -97,7 +97,7 @@ const Hero = () => {
               transition={{ duration: 0.6, delay: 0.4 }}
               className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-8 leading-relaxed"
             >
-              Software Engineer specializing in building scalable full-stack web platforms, enterprise SaaS solutions, drone technology platforms, and intelligent AI automation workflows for corporate and international clients.
+              Software Engineer and Full-Stack Developer based in Kerala, India. Specializing in high-performance React.js, Next.js, and MERN stack applications, enterprise SaaS solutions, and intelligent AI automation workflows.
             </motion.p>
 
             <motion.div

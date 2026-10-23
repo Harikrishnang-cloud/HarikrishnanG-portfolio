@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { ExternalLink, Github, Building2, ShoppingBag, Users, GraduationCap, Trophy, Plane, BookOpen, Bot, Zap, CheckCircle2, Globe2, Workflow, Sparkles, ArrowRight, ShieldCheck, Database, Mail, TableProperties, ZoomIn, X } from "lucide-react";
 
@@ -12,7 +13,7 @@ export interface MajorProject {
   features: string[];
   techStack: string[];
   image?: string;
-  icon: any;
+  icon: React.ComponentType<{ className?: string }>;
   liveUrl?: string;
   githubUrl?: string;
   caseStudyUrl?: string;
@@ -34,9 +35,10 @@ const majorProjects: MajorProject[] = [
       "Modern, SEO-optimized responsive architecture with performance-tuned loading speeds",
       "Integrated inquiry workflows and automated lead-generation pipelines",
     ],
-    techStack: ["React.js", "JavaScript", "Tailwind CSS", "Plesk-Hosting",],
+    techStack: ["React.js", "JavaScript", "Tailwind CSS", "Plesk-Hosting"],
     liveUrl: "https://asiasoftlab.in",
     githubUrl: "https://github.com/asiasoftlab/asiasoftlab-website",
+    caseStudyUrl: "/projects/asia-softlab",
   },
   {
     id: "asia-drone-store",
@@ -56,6 +58,7 @@ const majorProjects: MajorProject[] = [
     techStack: ["React.js", "Node.js", "Express.js", "MongoDB", "Redux Toolkit", "Tailwind CSS", "Payment Gateway"],
     liveUrl: "https://www.asiadronestore.com",
     githubUrl: "https://github.com/Harikrishnang-cloud/ADS-Asia_Drone_Store",
+    caseStudyUrl: "/projects/asia-drone-store",
   },
   {
     id: "employee-management-system",
@@ -75,6 +78,7 @@ const majorProjects: MajorProject[] = [
     techStack: ["Next.js", "TypeScript", "Node.js", "Express.js", "MongoDB", "JWT Auth", "Tailwind CSS"],
     liveUrl: "https://demo.asiasoftlab.in/",
     githubUrl: "https://github.com/asiasoftlab/EMS-Employee-s_Management_System",
+    caseStudyUrl: "/projects/employee-management-system",
   },
   {
     id: "asva-academy",
@@ -272,7 +276,7 @@ const Projects = () => {
                         <div className="relative aspect-[16/10] w-full overflow-hidden group/img bg-muted">
                           <img
                             src={project.image}
-                            alt={project.title}
+                            alt={`${project.title} - ${project.subtitle} by Harikrishnan G`}
                             loading="lazy"
                             decoding="async"
                             className="w-full h-full object-cover object-top group-hover/img:scale-105 transition-transform duration-500"
@@ -405,13 +409,13 @@ const Projects = () => {
                       )}
 
                       {project.caseStudyUrl && (
-                        <a
-                          href={project.caseStudyUrl}
+                        <Link
+                          to={project.caseStudyUrl}
                           className="inline-flex items-center gap-1.5 text-xs font-semibold text-primary hover:underline ml-2"
                         >
                           <span>Read Case Study</span>
                           <ArrowRight className="w-3.5 h-3.5" />
-                        </a>
+                        </Link>
                       )}
                     </div>
                   </div>

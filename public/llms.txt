@@ -1,8 +1,8 @@
 # Harikrishnan G - Portfolio & Professional Information
-> Software Developer / Web Developer based in Kerala, India.
+> Software Engineer & Full-Stack Developer based in Kerala, India.
 
 ## Summary
-Harikrishnan G is a Software Developer specializing in building scalable full-stack web platforms, enterprise SaaS applications, drone technology systems, and AI automation workflows. He holds an MSc and BSc in Mathematics and brings strong analytical, algorithmic, and engineering skills to full-stack software development.
+Harikrishnan G is a Software Engineer and Full-Stack Developer specializing in building high-performance web applications using React.js, Next.js, and the MERN stack (MongoDB, Express.js, React.js, Node.js), along with enterprise SaaS platforms, drone technology systems, and AI automation workflows. He holds an MSc and BSc in Mathematics and applies strong algorithmic, analytical, and software architecture principles to modern full-stack development.
 
 ## Professional Profiles
 - Official Website: https://harikrishnang.vercel.app/
@@ -12,25 +12,39 @@ Harikrishnan G is a Software Developer specializing in building scalable full-st
 - X (Twitter): https://x.com/HKINTERNATION22
 - Instagram: https://www.instagram.com/_harikrishnan_01/
 
+## Core Specializations & Roles
+- Software Engineer (Full-Stack Web Development)
+- Full-Stack Developer (MERN Stack: React, Node.js, Express.js, MongoDB)
+- React Developer (Kerala, India)
+- Next.js Developer (India)
+- AI & Workflow Automation Engineer (n8n, Gemini API, AI Agents)
+
 ## Core Skills
-- Languages: JavaScript, TypeScript, C, C++, Java, HTML5, CSS3
-- Frontend: React.js, Next.js, Redux Toolkit, Zustand, Tailwind CSS
-- Backend: Node.js, Express.js, NestJS, REST APIs, JWT Authentication, OAuth 2.0, Passport.js
+- Languages: JavaScript (ES6+), TypeScript, C, C++, Java, HTML5, CSS3
+- Frontend: React.js, Next.js, Redux Toolkit, Zustand, Tailwind CSS, Framer Motion
+- Backend: Node.js, Express.js, NestJS, RESTful APIs, JWT Authentication, OAuth 2.0, Passport.js
 - Databases: MongoDB, PostgreSQL, SQL, Redis, Firebase, Cloudinary
 - Cloud & DevOps: Docker, AWS (EC2, S3, Lambda, Load Balancer), Nginx, Linux, CI/CD, GitHub Actions, Vercel
 - AI & Automation: n8n, AI Agents, RAG, Gemini API
-- Testing & APIs: Playwright, Payment Gateways (Razorpay), Email APIs
+- Testing & APIs: Playwright, Payment Gateways (Razorpay), Email APIs (EmailJS)
 
 ## Experience
-- Software Engineer at Asia Softlab Pvt. Ltd. (Thiruvananthapuram, Kerala | February 2026 - Present): Developing high-performance full-stack web platforms, RESTful APIs, enterprise workflows, and cloud deployments.
-- Software Engineering Intern at Brototype (Kochi, Kerala | July 2025 - December 2025): Developed modern full-stack web applications, REST APIs, and authentication mechanisms.
-- Freelance Web Developer & AI Automation Engineer (Self-Employed | Remote | January 2025 - Present): Building responsive web platforms, booking systems, e-commerce solutions, and AI-driven automation pipelines.
+- Software Engineer at Asia Softlab Pvt. Ltd. (Thiruvananthapuram, Kerala | February 2026 - Present): Developing high-performance full-stack web platforms, RESTful APIs, enterprise SaaS workflows, and cloud deployments.
+- Software Engineering Intern at Brototype (Kochi, Kerala | July 2024 - December 2025): Developed modern full-stack MERN web applications, REST APIs, and authentication mechanisms.
+- Freelance Full-Stack Developer & AI Automation Engineer (Remote · Kerala, India | January 2025 - Present): Building responsive web platforms, booking systems, e-commerce solutions, and AI-driven automation pipelines.
 
-## Major Projects
-- Asia Softlab Pvt. Ltd. (Corporate Drone Technology & Service Platform): Official corporate platform for drone surveying, mapping, and DGCA pilot training registration. Live: https://asiasoftlab.in
-- Asia Drone Store (ADS): Enterprise e-commerce platform for professional UAVs, payloads, and accessories. Live: https://www.asiadronestore.com
-- Employee Management System (EMS): Internal enterprise SaaS application for biometric/web attendance, task assignments, and HR workflows. Live: https://demo.asiasoftlab.in/
-- Book-Love (Full-Stack Online Bookstore & E-Commerce Platform): E-commerce platform with Razorpay, Google OAuth (Passport.js), coupon engine, and Cloudinary media storage.
+## Featured Projects & Case Studies
+- Asia Drone Store (ADS): Enterprise e-commerce platform for commercial UAVs, optical payloads, and certified accessories. Stack: React.js, Node.js, Express.js, MongoDB, Redux Toolkit.
+  - Live: https://www.asiadronestore.com
+  - Case Study: https://harikrishnang.vercel.app/projects/asia-drone-store
+- Employee Management System (EMS): Internal enterprise SaaS application for biometric/web attendance, role-based access control, task delegation, and HR workflows. Stack: Next.js, TypeScript, Node.js, Express.js, MongoDB.
+  - Live Demo: https://demo.asiasoftlab.in/
+  - Case Study: https://harikrishnang.vercel.app/projects/employee-management-system
+- Asia Softlab Pvt. Ltd.: Corporate drone technology and service platform showcasing commercial aerial surveying, mapping, and DGCA pilot training registration. Stack: React.js, Tailwind CSS, Plesk.
+  - Live: https://asiasoftlab.in
+  - Case Study: https://harikrishnang.vercel.app/projects/asia-softlab
+- Book-Love: Full-Stack Online Bookstore & E-Commerce Platform with Razorpay, Google OAuth (Passport.js), coupon engine, and Cloudinary media storage. Stack: React.js, Node.js, Express.js, MongoDB.
+- AI Automation Workflows: n8n pipelines integrated with Gemini LLM, Google Docs, Gmail, and HTTP Webhooks.
 
 ## Contact
 - Email: harikrishnangmonkuttan@gmail.com
