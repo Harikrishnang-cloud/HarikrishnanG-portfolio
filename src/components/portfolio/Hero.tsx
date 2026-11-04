@@ -3,6 +3,26 @@ import { Mail, Phone, MapPin, Github, Linkedin, Code } from "lucide-react";
 import profilePhoto from "@/assets/Hari.jpg";
 import TechnicalParticles from "./TechnicalParticles";
 
+const WhatsAppIcon = ({ className = "w-4 h-4" }: { className?: string }) => (
+  <svg
+    viewBox="0 0 24 24"
+    className={className}
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      fill="#25D366"
+      d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.63C8.75 21.42 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.04 14.69 2 12.04 2Z"
+    />
+    <path
+      fill="#FFFFFF"
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M17.47 14.38C17.17 14.23 15.69 13.5 15.42 13.4C15.14 13.3 14.94 13.25 14.74 13.55C14.54 13.85 13.97 14.53 13.79 14.73C13.62 14.93 13.44 14.95 13.14 14.8C12.84 14.65 11.87 14.33 10.73 13.31C9.84 12.51 9.24 11.53 9.06 11.23C8.89 10.93 9.04 10.77 9.19 10.62C9.33 10.49 9.49 10.27 9.64 10.1C9.79 9.92 9.84 9.8 9.94 9.6C10.04 9.4 9.99 9.22 9.91 9.07C9.84 8.92 9.24 7.44 8.99 6.84C8.75 6.26 8.5 6.34 8.31 6.33C8.14 6.32 7.94 6.32 7.74 6.32C7.54 6.32 7.21 6.39 6.94 6.69C6.66 6.99 5.89 7.72 5.89 9.2C5.89 10.67 6.96 12.1 7.11 12.3C7.26 12.5 9.23 15.53 12.24 16.83C12.95 17.14 13.51 17.32 13.95 17.46C14.67 17.69 15.32 17.66 15.84 17.58C16.42 17.5 17.62 16.86 17.87 16.16C18.12 15.45 18.12 14.85 18.04 14.73C17.97 14.6 17.77 14.53 17.47 14.38Z"
+    />
+  </svg>
+);
+
 const Hero = () => {
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden bg-transparent">
@@ -112,21 +132,57 @@ const Hero = () => {
             >
               <a
                 href="mailto:harikrishnangmonkuttan@gmail.com"
-                className="flex items-center gap-2 px-4 py-2 rounded-lg bg-card hover:bg-card/80 border border-border transition-colors"
+                className="group relative overflow-hidden flex items-center gap-2 px-4 py-2 rounded-lg bg-card border border-border shadow-sm transition-all duration-300 hover:border-black hover:shadow-md"
               >
-                <Mail className="w-4 h-4 text-primary" />
-                <span className="text-sm text-foreground">Email</span>
+                <span
+                  aria-hidden="true"
+                  className="absolute inset-0 bg-black -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-out pointer-events-none"
+                />
+                <span className="relative z-10 flex items-center gap-2 text-foreground group-hover:text-white transition-colors duration-300">
+                  <Mail className="w-4 h-4 text-primary group-hover:text-white transition-colors duration-300" />
+                  <span className="text-sm font-medium">Email</span>
+                </span>
               </a>
+
+              <a
+                href="https://wa.me/919745860278"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative overflow-hidden flex items-center gap-2 px-4 py-2 rounded-lg bg-[#25D366] border border-[#25D366] text-white shadow-sm transition-all duration-300 hover:border-[#1ebe5b] hover:shadow-md"
+              >
+                <span
+                  aria-hidden="true"
+                  className="absolute inset-0 bg-white -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-out pointer-events-none"
+                />
+                <span className="relative z-10 flex items-center gap-2 text-white group-hover:text-[#075E54] transition-colors duration-300">
+                  <WhatsAppIcon className="w-5 h-5 shrink-0 transition-transform duration-300 group-hover:scale-105" />
+                  <span className="text-sm font-medium">+91 9745860278</span>
+                </span>
+              </a>
+
               <a
                 href="tel:+917907389098"
-                className="flex items-center gap-2 px-4 py-2 rounded-lg bg-card hover:bg-card/80 border border-border transition-colors"
+                className="group relative overflow-hidden flex items-center gap-2 px-4 py-2 rounded-lg bg-card border border-border shadow-sm transition-all duration-300 hover:border-black hover:shadow-md"
               >
-                <Phone className="w-4 h-4 text-primary" />
-                <span className="text-sm text-foreground">+91 7907389098</span>
+                <span
+                  aria-hidden="true"
+                  className="absolute inset-0 bg-black -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-out pointer-events-none"
+                />
+                <span className="relative z-10 flex items-center gap-2 text-foreground group-hover:text-white transition-colors duration-300">
+                  <Phone className="w-4 h-4 text-primary group-hover:text-white transition-colors duration-300" />
+                  <span className="text-sm font-medium">+91 7907389098</span>
+                </span>
               </a>
-              <div className="flex items-center gap-2 px-4 py-2 rounded-lg bg-card border border-border">
-                <MapPin className="w-4 h-4 text-primary" />
-                <span className="text-sm text-foreground">Kollam, Kerala</span>
+
+              <div className="group relative overflow-hidden flex items-center gap-2 px-4 py-2 rounded-lg bg-card border border-border shadow-sm transition-all duration-300 hover:border-black hover:shadow-md cursor-default">
+                <span
+                  aria-hidden="true"
+                  className="absolute inset-0 bg-black -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-out pointer-events-none"
+                />
+                <span className="relative z-10 flex items-center gap-2 text-foreground group-hover:text-white transition-colors duration-300">
+                  <MapPin className="w-4 h-4 text-primary group-hover:text-white transition-colors duration-300" />
+                  <span className="text-sm font-medium">Kollam, Kerala</span>
+                </span>
               </div>
             </motion.div>
 
@@ -141,27 +197,45 @@ const Hero = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Harikrishnan G GitHub Profile"
-                className="p-3 rounded-full bg-foreground text-background hover:bg-foreground/90 transition-colors"
+                className="group relative overflow-hidden p-3 rounded-full bg-foreground text-background border border-foreground shadow-sm transition-all duration-300 hover:shadow-md"
               >
-                <Github className="w-5 h-5" />
+                <span
+                  aria-hidden="true"
+                  className="absolute inset-0 bg-background -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-out pointer-events-none"
+                />
+                <span className="relative z-10 flex items-center justify-center text-background group-hover:text-foreground transition-colors duration-300">
+                  <Github className="w-5 h-5" />
+                </span>
               </a>
               <a
                 href="https://www.linkedin.com/in/harikrishnan-g-1315721b7/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Harikrishnan G LinkedIn Profile"
-                className="p-3 rounded-full bg-foreground text-background hover:bg-foreground/90 transition-colors"
+                className="group relative overflow-hidden p-3 rounded-full bg-card text-foreground border border-border shadow-sm transition-all duration-300 hover:border-[#0A66C2] hover:shadow-md"
               >
-                <Linkedin className="w-5 h-5" />
+                <span
+                  aria-hidden="true"
+                  className="absolute inset-0 bg-[#0A66C2] -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-out pointer-events-none"
+                />
+                <span className="relative z-10 flex items-center justify-center text-foreground group-hover:text-white transition-colors duration-300">
+                  <Linkedin className="w-5 h-5" />
+                </span>
               </a>
               <a
                 href="https://leetcode.com/u/HK_INTERNATIONAL/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Harikrishnan G LeetCode Profile"
-                className="p-3 rounded-full bg-foreground text-background hover:bg-foreground/90 transition-colors"
+                className="group relative overflow-hidden p-3 rounded-full bg-card text-foreground border border-border shadow-sm transition-all duration-300 hover:border-[#FFA116] hover:shadow-md"
               >
-                <Code className="w-5 h-5" />
+                <span
+                  aria-hidden="true"
+                  className="absolute inset-0 bg-[#FFA116] -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-out pointer-events-none"
+                />
+                <span className="relative z-10 flex items-center justify-center text-foreground group-hover:text-white transition-colors duration-300">
+                  <Code className="w-5 h-5" />
+                </span>
               </a>
             </motion.div>
           </div>

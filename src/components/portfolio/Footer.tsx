@@ -1,9 +1,29 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import {
-  Github, Linkedin, Code2, Twitter, Instagram, MapPin, Mail, Phone,
+  Github, Linkedin, Code2, Twitter, Instagram, MapPin, Mail, Phone, Youtube,
   FileText, ExternalLink, Bot, Sparkles,
 } from "lucide-react";
+
+const WhatsAppIcon = ({ className = "w-4 h-4" }: { className?: string }) => (
+  <svg
+    viewBox="0 0 24 24"
+    className={className}
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      fill="#25D366"
+      d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.63C8.75 21.42 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.04 14.69 2 12.04 2Z"
+    />
+    <path
+      fill="#FFFFFF"
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M17.47 14.38C17.17 14.23 15.69 13.5 15.42 13.4C15.14 13.3 14.94 13.25 14.74 13.55C14.54 13.85 13.97 14.53 13.79 14.73C13.62 14.93 13.44 14.95 13.14 14.8C12.84 14.65 11.87 14.33 10.73 13.31C9.84 12.51 9.24 11.53 9.06 11.23C8.89 10.93 9.04 10.77 9.19 10.62C9.33 10.49 9.49 10.27 9.64 10.1C9.79 9.92 9.84 9.8 9.94 9.6C10.04 9.4 9.99 9.22 9.91 9.07C9.84 8.92 9.24 7.44 8.99 6.84C8.75 6.26 8.5 6.34 8.31 6.33C8.14 6.32 7.94 6.32 7.74 6.32C7.54 6.32 7.21 6.39 6.94 6.69C6.66 6.99 5.89 7.72 5.89 9.2C5.89 10.67 6.96 12.1 7.11 12.3C7.26 12.5 9.23 15.53 12.24 16.83C12.95 17.14 13.51 17.32 13.95 17.46C14.67 17.69 15.32 17.66 15.84 17.58C16.42 17.5 17.62 16.86 17.87 16.16C18.12 15.45 18.12 14.85 18.04 14.73C17.97 14.6 17.77 14.53 17.47 14.38Z"
+    />
+  </svg>
+);
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -42,38 +62,7 @@ const Footer = () => {
 
   ];
 
-  const socialLinks = [
-    {
-      icon: Github,
-      href: "https://github.com/Harikrishnang-cloud",
-      label: "Harikrishnan G on GitHub",
-      hoverColor: "hover:text-foreground hover:border-foreground/40 hover:bg-muted/80",
-    },
-    {
-      icon: Linkedin,
-      href: "https://www.linkedin.com/in/harikrishnan-g-1315721b7/",
-      label: "Harikrishnan G on LinkedIn",
-      hoverColor: "hover:text-[#0A66C2] hover:border-[#0A66C2]/40 hover:bg-[#0A66C2]/10",
-    },
-    {
-      icon: Code2,
-      href: "https://leetcode.com/u/HK_INTERNATIONAL/",
-      label: "Harikrishnan G on LeetCode",
-      hoverColor: "hover:text-[#FFA116] hover:border-[#FFA116]/40 hover:bg-[#FFA116]/10",
-    },
-    {
-      icon: Twitter,
-      href: "https://x.com/HKINTERNATION22",
-      label: "Harikrishnan G on X (Twitter)",
-      hoverColor: "hover:text-[#1DA1F2] hover:border-[#1DA1F2]/40 hover:bg-[#1DA1F2]/10",
-    },
-    {
-      icon: Instagram,
-      href: "https://www.instagram.com/_harikrishnan_01/",
-      label: "Harikrishnan G on Instagram",
-      hoverColor: "hover:text-[#E4405F] hover:border-[#E4405F]/40 hover:bg-[#E4405F]/10",
-    },
-  ];
+  
 
   return (
     <footer className="w-full pt-16 pb-12 bg-muted/40 border-t border-border relative overflow-hidden" aria-labelledby="footer-heading">
@@ -101,22 +90,7 @@ const Footer = () => {
               <span>Kollam &amp; Thiruvananthapuram, Kerala, India</span>
             </div>
 
-            <div className="pt-2">
-              <div className="flex flex-wrap gap-2">
-                {socialLinks.map(({ icon: Icon, href, label, hoverColor }) => (
-                  <a
-                    key={label}
-                    href={href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label={label}
-                    className={`p-2 rounded-xl border border-border bg-card text-muted-foreground transition-all duration-300 hover:scale-110 shadow-sm ${hoverColor}`}
-                  >
-                    <Icon className="w-4 h-4" />
-                  </a>
-                ))}
-              </div>
-            </div>
+            
           </div>
 
           {/* Column 2: Navigation & Internal Linking (SEO) */}
