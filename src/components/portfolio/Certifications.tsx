@@ -14,6 +14,16 @@ export interface CertificateItem {
 
 const certificates: CertificateItem[] = [
   {
+    id: "cert-6",
+    title: "Certificate of Participation",
+    authority: "Google Developer Groups Cloud Kochi",
+    date: "November 14, 2026",
+    image: "/certificates/GDG.jpeg",
+    link: "#",
+    shortDescription:
+      "Certificate of participation in Google Cloud Community Day Kochi 2026, recognizing active participation and contribution to the exchange of knowledge and ideas.",
+  },
+  {
     id: "cert-1",
     title: "Attention is All You Web (GDG Cloud Kochi)",
     authority: "Google Developer Groups",
@@ -142,8 +152,8 @@ const Certifications = () => {
                 </div>
 
                 {/* Date Badge */}
-                <div className="absolute top-3 right-3 flex items-center gap-1.5 text-[11px] font-medium text-foreground bg-background/90 backdrop-blur-md px-2.5 py-1 rounded-full border border-border shadow-sm">
-                  <Calendar className="w-3 h-3 text-primary" />
+                <div className="absolute top-3 right-3 flex items-center gap-1.5 text-[11px] font-medium text-foreground bg-background/90 backdrop-blur-md px-2.5 py-1 rounded-lg border border-border shadow-sm">
+                  
                   <span>{cert.date}</span>
                 </div>
               </div>
